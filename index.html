@@ -4,31 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Not Quite Sure What I Am Doing!</title>
+    <title>HTML Recap
+    </title>
 </head>
 <body>
-    <h1>Not Quite Sure What I Am Doing</h1>
+    <nav style="text-align: right;">
+        <a href="https://www.jimmyjohns.com"">Competitor: Jimmy Johns</a>
+        <a href="https://www.subway.com">Competitor: Subway</a>
+    </nav>
 
-    <h2>Maybe by the time this course ends I will know what I am doing</h2>
+    <h1>Ordering Your Sandwich</h1>
 
-    <h3>I am sitting at work and I really should be doing work but here I am goofing off on my computer.</h3>
+    <h2>How We Make Sandwiches</h2>
+        <iframe src="https://www.foodnetwork.com/recipes/articles/50-panini" frameborder="0" width="500" height="315" allowfullscreen>
+        </iframe>
 
-    <hr />
-    <p>I am really tired and should be getting sleep. Is this what programmers and web designers do? They don't get any sleep.</p>
-    <hr />
-    <h3>Ways that I can get some sleep.</h3>
-    <ol>
-        <li><s>Drink a lot of whiskey.</s></li>
-        <li>Drink hot milk.</li>
-        <li>Eat a lot of sugar and pass out.</li>
-        <li>Read a boring book.</li>
-    </ol>
+    <h2>Let us know what you would like on your sandwich!</h2>
+    <div>
+        <form>
+            <p>
+                <label>Customer Name: <input /></label>
+                <label>Phone Number: <input /></label>
+                <label>Loyalty Rewards Number: <input /></label>
+            </p>
+        </form>        
+    </div>
 
-    <h3>Suggested manner of going to sleep.</h3>
-    <a href="https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/sleep/art-20048379">Sleep Suggestions</a>
+    <div>
+        <fieldset>
+            <legend>Sandwich Type</legend>
+            <p>
+                <input type="radio" name="sandwich" id="size0" value="size0" />
+                <label for="size0">Italian</label>
+            </p>
+            <p>
+                <input type="radio" name="sandwich" id="size0" value="size0" />
+                <label for="size0">Club</label>
+            </p>
+            <p>
+                <input type="radio" name="sandwich" id="size0" value="size0" />
+                <label for="size0">Design Your Own</label>
+            </p>
+        </fieldset>
+    </div>
 
-    <h3>What I look like without sleep when a snake is crawling on me.</h3>
-    <img src="../BasicHTMLTags/Sleep.jpg" alt="This is me sleeping." width="300" height="300"
+    <div>
+        <fieldset>
+            <legend>Meats</legend>
+            <p>
+                <input type="checkbox" name="meats" id="ham" value="ham" />
+                <label for="ham">Ham</label>
+            </p>
+            <p>
+                <input type="checkbox" name="meats" id="turkey" value="turkey" />
+                <label for="turkey">Turkey</label>
+            </p>
+            <p>
+                <input type="checkbox" name="meats" id="salami" value="salami" />
+                <label for="salami">Salami</label>
+            </p>
+            <p>
+                <input type="checkbox" name="meats" id="bacon" value="bacon" />
+                <label for="bacon">Bacon</label>
+            </p>
+        </fieldset>
+    </div>
 
+    <div>
+        <fieldset>
+            <legend>Veggies</legend>
+            <p>
+                <input type="checkbox" name="veggies" id="lettuce" value="lettuce" />
+                <label for="lettuce">Lettuce</label>
+            </p>
+            <p>
+                <input type="checkbox" name="veggies" id="onions" value=onions" />
+                <label for="onions">Onions</label>
+            </p>
+            <p>
+                <input type="checkbox" name="veggies" id="peppers" value="peppers" />
+                <label for="peppers">Peppers</label>
+            </p>
+            <p>
+                <input type="checkbox" name="veggies" id="tomatoes" value="tomoatoes" />
+                <label for="tomatoes">Tomatoes</label>
+            </p>
+            <p>
+                <input type="checkbox" name="veggies" id="cucumbers" value="cucumbers" />
+                <label for="cucumbers">Cucumbers</label>
+            </p>
+            <p>
+                <input type="checkbox" name="veggies" id="spinach" value="spinach" />
+                <label for="spinach">Spinach</label>
+            </p>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Condiments</legend>
+            <p>
+                <input type="checkbox" name="condiments" id="oil" value="oil" />
+                <label for="oil">Oil</label>
+            </p>
+            <p>
+                <input type="checkbox" name="condiments" id="vinegar" value="vinegar" />
+                <label for="vinegar">Vinegar</label>
+            </p>
+            <p>
+                <input type="checkbox" name="condiments" id="mustard" value="mustard" />
+                <label for="mustard">Mustard</label>
+            </p>
+            <p>
+                <input type="checkbox" name="condiments" id="ketchup" value="ketchup" />
+                <label for="kethcup">Ketchup</label>
+            </p>
+            <p>
+                <input type="checkbox" name="condiments" id="pepper" value="pepper" />
+                <label for="pepper">Pepper</label>
+            </p>
+            <p>
+                <input type="checkbox" name="condiments" id="salt" value="salt" />
+                <label for="salt">Salt</label>
+            </p>
+        </fieldset>
+    </div>
+
+    <br />
+    <fieldset>
+        <legend>Delivery Preferences</legend>
+        <p>
+            <label for="time">Preferred Delivery Time:</label>
+            <input id="time" name="time" type="time" min="09:00" max="23:00" step="900">
+        </p>
+        <p>
+            Delivery Instructions:
+            <textarea name="instructions"></textarea>
+        </p>
+        <p>
+            <button type="submit">Submit Order</button>
+        </p>
+    </fieldset>
 </body>
 </html>
